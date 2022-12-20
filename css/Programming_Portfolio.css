@@ -1,0 +1,825 @@
+/*
+  PROGRAMMING PORTFOLIO STYLING
+*/
+
+/*--------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------*/
+
+/* GENERAL STYLING */
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  color: var(--color_primary);
+}
+
+@font-face {
+  font-family:"Inconsolata";
+  src: url("../fonts/Inconsolata.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family:"Noto-Sans-Regular";
+  src: url("../fonts/NotoSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  --color_primary: #ced4da;
+  --color_secondary: #0c637f;
+  --color_hover: #1dd3b0;
+  --color_button: #166379;
+  --color_page_background: #073b4c;
+  --color_white: #FFFFFF;
+
+  font-size: 18px;
+  line-height: 20px;
+  font-family: 'Inconsolata', serif;
+  background-color: var(--color_page_background);
+}
+
+code {
+  padding: 0.5rem;
+  display: block;
+}
+
+.top_space{
+  padding-top: 80px;
+}
+
+.small_top_space{
+  padding-top: 50px;
+}
+
+.medium_top_space{
+  padding-top: 110px;
+}
+
+.bottom_space{
+  padding-top: 80px;
+}
+
+
+
+
+
+
+/*--------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------*/
+
+/* TITLE ELEMENTS */
+
+/* CSS format from "Ecommerce Product Page Design" tutorial by GeekProbin */
+.portfolio_title_large
+.portfolio_title_medium
+.portfolio_title_small{
+  padding: 0.6rem 0;
+  text-transform: capitalize;
+  font-family: 'Noto-Sans-Regular';
+}
+
+.portfolio_title_large{
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  opacity: 0.9;
+}
+
+.portfolio_title_medium {
+  text-align: center;
+}
+
+.portfolio_title_small {
+  font-weight: 100;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  text-align: center;
+}
+
+.portfolio_text_light {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  opacity: 0.7;
+  margin: 0.2rem 0;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------*/
+
+/* STYLE GUIDE SPECIFIC STYLING */
+
+.element {
+  margin-top: 4rem;
+}
+
+
+
+/*--------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------*/
+
+/* COLOUR AND FONT SECTION STYLING */
+
+.colour_labels {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: var(--color_primary);
+}
+
+.primary_color_square {
+  height: 220px;
+  width: 220px;
+  background-color: var(--color_primary);
+  margin: auto;
+}
+
+.hover_color_square {
+  height: 220px;
+  width: 220px;
+  background-color: var(--color_hover);
+  margin: auto;
+}
+
+.background_color_square {
+  height: 220px;
+  width: 220px;
+  border: 2px solid var(--color_primary);
+  background-color: var(--color_page_background);
+  margin: auto;
+}
+
+.inconsolata_sample_font{
+  font-size: 18px;
+  line-height: 60px;
+  font-family: 'Inconsolata', serif;
+}
+
+.noto_sans_regular_sample_font{
+  font-size: 18px;
+  line-height: 60px;
+  font-family: 'Noto-Sans-Regular', sans-serif;
+}
+
+
+
+
+
+/*---------------------------------------------------------------------------------*/
+
+.colour_palette_container {   /* Used "HOW TO - Responsive Form" tutorial from W3schools */
+  padding-top: 20px;
+  margin: auto;
+  border: 1px solid var(--color_page_background);
+  border-radius: 5px;
+  font: 12px 'Noto-Sans-Regular', sans-serif;
+  overflow: hidden;
+  width: 100%;
+  background: var(--color_page_background);
+}
+
+/* Column grids for font and colour
+   Used "How to Create an Image Grid Gallery" tutorial from dcode. */
+.colour_palette_grid {
+  --gap: 30px;
+  --col_count: 3;
+  --row_height: 250px;
+
+  box-sizing: border-box;
+  padding: var(--gap);
+
+  display: grid;
+  grid-template-columns: repeat(var(--col_count), 1fr);
+  grid-auto-rows: var(--row_height);
+  gap: var(--gap);
+}
+
+.colour_palette_grid_element {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+
+
+/*---------------------------------------------------------------------------------*/
+
+.portfolio_font_container {
+  padding-left: 10px;
+  padding-top: 20px;
+  margin: auto;
+  border: 1px solid var(--color_page_background);
+  border-radius: 5px;
+  font: 16px 'Noto-Sans-Regular', sans-serif;
+  overflow: hidden;
+  width: 900px;
+  text-align: center;
+  background: var(--color_page_background);
+}
+
+.portfolio_font_grid {
+  --gap: 20px;
+  --col_count: 2;
+  --row_height: 100px;
+
+  box-sizing: border-box;
+  padding: var(--gap);
+
+  display: grid;
+  grid-template-columns: repeat(var(--col_count), 1fr);
+  grid-auto-rows: var(--row_height);
+  gap: var(--gap);
+}
+
+.porfolio_font_grid_element {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+
+
+
+/*--------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------*/
+
+/* NAVIGATION HEADER */
+
+header{
+  position: relative;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--color_page_background);   /* Changed background property in header to add colour to entire header element */
+  padding: 28px 12%;
+  transition: all .50s ease;
+}
+
+.header{
+  height: 100vh;
+  width: 100%;
+  padding: 0 0%;
+  position: relative;
+}
+
+nav{
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo{
+  display: flex;
+  align-items: right;
+  width: 70px;
+}
+
+.logo i{
+  color: var(--color_primary);
+  font-size: 28px;
+  margin-right: 3px;
+}
+
+.logo span{
+  color: var(--color_primary);
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+.navigation_bar{
+  display: flex;
+}
+
+.navigation_bar li{
+  display: inline-block;
+}
+
+.navigation_bar li a{
+  color: var(--color_primary);
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 5px 0;
+  margin: 0px 30px;
+  box-shadow: inset 0 0 0 0 var(--color_button);
+  border-top-right-radius: 25%;
+  border-bottom-left-radius: 25%;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  position: relative;
+}
+
+.navigation_bar a:hover{
+  box-shadow: inset 0 -50px 0 0 var(--color_hover);   /* Sliding transition referenced from 6 creative ideas for CSS Link Hover */
+  border-top-right-radius: 25%;
+  border-bottom-left-radius: 25%;
+  color: var(--color_primary);
+}
+
+.main{
+  display: flex;
+  align-items: center;
+}
+
+/* Problem identified - hamburger_menu_icon as a ID can only be referenced once per page. As of now, it is
+   only functional on Home Page */
+#hamburger_menu_icon{
+  font-size: 50px;
+  color: var(--color_primary);
+  cursor: pointer;
+  z-index: 10001;
+  display: none;
+}
+
+
+
+
+
+@media (max-width: 1280px){
+  header{
+    padding: 20px 2%;
+    transition: 0.4s;
+  }
+  .navigation_bar a{
+    padding: 5px 0;
+    margin: 0px 20px;
+  }
+}
+
+@media (max-width: 600px){
+  #hamburger_menu_icon{
+    display: block;
+  }
+  .navigation_bar{
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    width: 200px;
+    height: 26vh;
+    background: linear-gradient(to right, var(--color_page_background), var(--color_white));
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 10px;
+    transition: all .50s ease;
+  }
+  .navigation_bar li a{
+    display: block;
+    margin: 15px 0;
+    padding: 0px 18px;
+    transition: all .50s ease;
+    font-size:`18px;
+    width: 90px;
+  }
+  .navigation_bar li a:hover{
+    border-radius: 0%;
+  }
+  .navigation_bar li a.active{
+    border-radius: 0%;
+  }
+  .navigation_bar.open{
+    right: 2%;
+  }
+}
+
+
+
+
+
+
+
+/*--------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------*/
+
+/* WEBSITE FOOTER */
+
+footer{
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-bottom: calc(25% - 50vh);
+    position: bottom;
+    bottom: 0;
+    background: var(--color_secondary);
+    color: var(--color_page_background);
+    padding: 15px 10px 30px 0px;
+    font-size: 13px;
+    line-height: 15px;
+}
+
+.footer_row{
+    width: 65%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.footer_column{
+    flex-basis: 33%;
+    padding: 10px;
+}
+
+.footer_column h3{
+  width: fit-content;
+  margin-bottom: 30px;
+  position: relative;
+  font-size: 19px;
+}
+
+.footer_column p{
+  list-style: none;
+  margin-bottom: 14px;
+  font-size: 14px;
+  max-width: 200px;   /*Controls the 1st paragraph so it balances white space with the rest of the elements*/
+  color: var(--color_white);
+}
+
+.footer_column p a{
+  text-decoration: underline;
+  color: var(--color_white);
+}
+
+.footer_column p:hover a {
+  color: var(--color_hover);
+}
+
+.footer_column form{
+  padding-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.footer_column form .far{
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.footer_column form input{
+  width: 100%;
+  background: transparent;
+  border: 0;
+  outline: none;
+  font-size: 14px;
+}
+
+.footer_column form button{
+  background: transparent;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.footer_column form button .fas{
+  font-size: 16px;
+  color: var(--color_white);
+}
+
+.footer_column .footer_contact a{
+  text-decoration: none;
+  font-size: 16px;
+  color: var(--color_white);
+}
+
+.footer_column .footer_contact:hover a{
+  color: var(--color_hover);
+}
+
+.footer_column p a{
+  text-decoration: underline;
+  color: var(--color_white);
+}
+
+.footer_column p:hover a {
+  color: var(--color_hover);
+}
+
+
+.copyright{
+  text-align: center;
+  margin-bottom: -15px;
+}
+
+
+
+@media screen and (max-width: 1380px) {
+  .footer_column{
+      flex-basis: 50%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .footer_column{
+      flex-basis: 80%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  footer{
+      bottom: unset;
+  }
+  .footer_column{
+      flex-basis: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------*/
+
+/* ABOUT ME PAGE */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------*/
+
+/* WORKS PAGE */
+
+.works_title{
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-top: 0;
+  text-align: center;
+}
+
+.works_bottom_space{
+  padding-bottom: 40px;
+}
+
+.works_imagelink_description{
+    background: transparent;
+    width: 350px;
+    cursor: pointer;
+    border: none;
+    transition: all 0.6s ease;
+
+    color: var(--color_white);
+    text-shadow: 1px 1px 3px var(--color_primary);
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 40px;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.works_imagelink_description:hover{
+    opacity: 1;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1380px) {
+  .works_imagelink_description{
+    width: 300px;
+    font-size: 28px;
+    line-height: 30px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .works_imagelink_description{
+    width: 250px;
+    font-size: 23px;
+    line-height: 30px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .works_imagelink_description{
+    width: 300px;
+    font-size: 23px;
+    line-height: 35px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------*/
+
+/* PROJECT PAGE */
+
+.project_1_content{
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+  column-gap: 7rem;
+  align-items: center;
+  padding: 0 5rem;
+}
+
+.project_1_image_content{
+  position: relative;
+  width: 570px;
+  height: auto;
+  /* border: 6px solid var(--color_page_background); */
+}
+
+.project_1_image{
+  width: 550px;
+  height: auto;
+  position: relative;
+}
+
+.project_1_banner_image{
+    width: 92vw;
+    margin-left: calc(50% - 46vw);
+    margin-top: calc(25% - 51vh);
+    height: 92vh;
+    position: relative;
+    z-index: -100;
+}
+
+.project_1_image_textBox{
+  position: absolute;
+  bottom: -20%;
+  right: -1rem;
+  padding: 0.7rem;
+  max-width: 600px;
+  width: 100%;
+  border: 6px solid var(--color_page_background);
+  background-color: var(--color_white);
+}
+
+/* Spacing change for Figure 1 text box since it's contents take up only 1 line */
+.project_1_figure_1_image_textBox{
+  position: absolute;
+  bottom: -17%;
+  right: -1rem;
+  padding: 0.7rem;
+  max-width: 400px;
+  width: 100%;
+  border: 6px solid var(--color_page_background);
+  background-color: var(--color_white);
+}
+
+.project_1_image_textBox .project_1_description .project_1_image_description{
+  text-align: left;
+}
+
+.project_1_title{
+  color: var(--color_primary);
+  font-weight: 100;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  padding-bottom: 30px;
+  text-align: center;
+}
+.project_1_header_title{
+  position: absolute;
+  text-align: center;
+  line-height: 70px;
+  font-size: 3rem;
+  font-weight: 700;
+  left: 50%;
+  top: 60%;
+  width: 90%;
+  transform: translate(-50%, -50%);
+  padding: 1.3rem 0;
+  max-width: 900px;
+  text-shadow: 0px 0px 15px var(--color_primary);
+  color: var(--color_white);
+}
+
+.project_1_description{
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.8rem;
+  margin: 0px 0;
+}
+
+.project_1_image_description{
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.5rem;
+  margin: 0px 0;
+}
+
+.project_1_top_space{
+  padding-top: 140px;
+}
+
+.project_1_bottom_space{
+  padding-bottom: 200px;
+}
+
+.project_1_intro_section_bottom_space{
+  padding-bottom: 160px;
+}
+
+
+
+
+
+
+/*--------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------*/
+
+/* REFERENCES LIST */
+
+.references_list_backdrop{
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  height: 130vh;
+  background-image: linear-gradient(rgba(0,0,0,0.1), var(--color_button)), url(../img/Shiba_Ending.png);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.references_list{
+  max-width: 1400px;
+  color: var(color_white);
+}
+
+.references_list h2{
+  margin-top: 0px;
+  margin-bottom: 40px;
+}
+
+.references_list h3{
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.references_list ul li{
+  list-style: none;
+  margin-bottom: 14px;
+  font-size: 14px;
+  margin-left: 50px;
+  color: var(color_white);
+}
+
+.references_list ul li a{
+  text-decoration: underline;
+}
