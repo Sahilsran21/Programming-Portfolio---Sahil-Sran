@@ -12,12 +12,8 @@
   <link rel="stylesheet" href="main.css">
 </head>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script src="main.js"></script>
 
 <body>
-
 
 <!-- TITLE AND NAVIGATION SECTION -->
 <header>
@@ -32,7 +28,7 @@
                   <ul class= "navigation_bar">
                       <li> <a href="index.html">Home</a> </li>
                       <li> <a href="#about">About</a> </li>
-                      <li> <a href="#works">Works</a> </li>
+                      <li> <a href="#portfolio">Portfolio</a> </li>
                       <li> <a href="#experience">Experience</a> </li>
                       <li> <a href="#contact">Contact</a> </li>
                   </ul>
@@ -44,20 +40,173 @@
   <h2> Programmer | Front-End Developer <h6>
 </div>
 
-
-
-
-
-
-
-</header>
 <div class = "top_space"> </div>
 
 
 
 
 
+<!-- ABOUT SECTION -->
+<section class="about_section" id="about">
+    <div class = "about_container">
+        <div class = "profile_img">
+            <img src = "img/profile.png" alt"Profile Image">
+        </div>
 
+        <div class = "about_details">
+            <div class = "about_heading">
+                <h1> About </h1>
+                <h6> Myself </h6>
+            </div>
+                <p> I am a Simon Frazer University graduate from the School of Interactive Arts and Technology. I
+                    primarily specialize in web development but hope to extend myself into roles involving mobile
+                    computing or game development.
+                </p>
+        </div>
+
+          <div class = "about_social_media">
+                <ul class = "about_navigation_list"
+                    <li> <a href="#" class = "icon_link" <i class "fab fa-facebook-square"> </a> </li>
+                    <li> <a href="#" class = "icon_link" <i class "fab fa-twitter-square"> </a> </li>
+                    <li> <a href="#" class = "icon_link" <i class "fab fa-dribbble-square"> </a> </li>
+                </ul>
+          </div>
+    </div>
+</section>
+
+
+
+
+
+<!-- PORTFOLIO SECTION -->
+<section class = "portfolio_section" id="portfolio">
+  <div class = "portfolio_container">
+      <div class = "portfolio_heading">
+          <h1>Portfolio</h1>
+          <h6>View some of my past projects</h6>
+      </div>
+
+
+      <div class = "portfolio_item">
+          <div class = "portfolio_img">
+              <img src = "img/portfolio_item_1.png" alt="Portfolio Item 1">
+          </div>
+          <div class ="portfolio_description">
+              <h6> Web Development <h6>
+              <h1> Blog Website </h1>
+                  <p> This is a project that I worked on in conjunction with the following members.
+                      This is a project that I worked on in conjunction with the following members.
+                  </p>
+                  <a href="#" class="cta"> View Details </a>
+          </div>
+      </div>
+
+
+      <div class = "portfolio_item">
+          <div class = "portfolio_img">
+              <img src = "img/portfolio_item_2.png" alt="Portfolio Item 1">
+          </div>
+          <div class ="portfolio_description">
+              <h6> Web Development <h6>
+              <h1> Blog Website </h1>
+                  <p> This is a project that I worked on in conjunction with the following members.
+                      This is a project that I worked on in conjunction with the following members.
+                  </p>
+                  <a href="#" class="cta"> View Details </a>
+          </div>
+      </div>
+
+
+      <div class = "portfolio_item">
+          <div class = "portfolio_img">
+              <img src = "img/portfolio_item_3.png" alt="Portfolio Item 1">
+          </div>
+          <div class ="portfolio_description">
+              <h6> Web Development <h6>
+              <h1> Blog Website </h1>
+                  <p> This is a project that I worked on in conjunction with the following members.
+                      This is a project that I worked on in conjunction with the following members.
+                  </p>
+                  <a href="#" class="cta"> View Details </a>
+          </div>
+      </div>
+
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
+<!-- EXPERIENCE SECTION -->
+<section class = "experience_section" id="experience">
+  <div class = "experience_container">
+      <div class = "experience_heading">
+          <h1>Work Experience</h1>
+          <h6>Past and current jobs</h6>
+      </div>
+
+      <div class = experience_timeline>
+          <ul>
+              <li class ="experience_date" data-date ="2011 - Present">
+                   <h1> Google </h1>
+                       <p> This is a project that I worked on in conjunction with the following members.
+                           This is a project that I worked on in conjunction with the following members.
+                       </p>
+              </li>
+
+
+              <li class ="experience_date" data-date ="2011 - Present">
+                   <h1> Google </h1>
+                       <p> This is a project that I worked on in conjunction with the following members.
+                           This is a project that I worked on in conjunction with the following members.
+                       </p>
+              </li>
+
+
+              <li class ="experience_date" data-date ="2011 - Present">
+                   <h1> Google </h1>
+                       <p> This is a project that I worked on in conjunction with the following members.
+                           This is a project that I worked on in conjunction with the following members.
+                       </p>
+              </li>
+          </ul>
+      </div>
+  </div>
+</section>
+
+
+
+
+<!-- CONTACT ELEMENT -->
+<section class = "contact_section" id="contact">
+  <div class = "contact_container">
+      <div class = "contact_heading">
+          <h1>Contact</h1>
+          <h6>Let's work together!</h6>
+      </div>
+
+      <form action "">
+        <label for ="name"> Name: </label>
+          <input type = "text" id="name" name="name" placeholder= "Enter your name..." required>
+        <label for ="email"> Email: </label>
+          <input type = "email" id="email" name="email" placeholder= "Enter your email..." required>
+        <label for ="service"> Services: </label>
+          <select name="services" id="service">
+            <option value= ""> Web Design </option>
+            <option value= ""> Web Development </option>
+            <option value= ""> Web Design/Development </option>
+          </select>
+        <label for ="subject"> Subject: </label>
+          <textarea name = "subject" id = "subject" cols="10" rows="10"> </textarea>
+            <input type = "submit" value="submit">
+      </form>
+  </div>
+</section>
 
 
 
@@ -86,6 +235,10 @@
 <!--JAVASCRIPT LINK--->
       <!--*Note: Javascript link must be placed at bottom of html file within body property--->
 <script type="text/javascript" src="js/script.js"> </script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="main.js"></script>
 
 
 </body>
